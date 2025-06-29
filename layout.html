@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyV Matrimony - {% block title %}{% endblock %}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="layout.css">
+
+
+</head>
+
+<body>
+
+    <header class="navbar">
+         <button class="hamburger"><i class="fas fa-bars"></i></button>
+        <a href="index.html" class="logo"></a>
+        <nav class="nav-links">
+            <ul>
+                <li id="myVivahLink">
+                    <a href="#" class="my-vivah-toggle"><i class="fas fa-home"></i> My Vivah</a>
+                    <!-- This specific list item will no longer trigger a dropdown in HTML.html, but is kept for consistency in navbar structure -->
+                </li>
+                <li class="search-menu">
+                    <a href="search.html" class="search-toggle"><i class="fas fa-search"></i> Search</a>
+                    <div class="search-dropdown">
+                        <a href="search.html?type=basic"><i class="fas fa-search"></i> Basic Search</a>
+                        <a href="search.html?type=advanced"><i class="fas fa-cogs"></i> Advanced Search</a>
+                        <a href="search.html?type=id"><i class="fas fa-fingerprint"></i> ID Search</a>
+                    </div>
+                </li>
+                <li><a href="matches.html"><i class="fas fa-heart"></i> Matches</a></li>
+                <li><a href="activity.html"><i class="fas fa-bell"></i> Activity</a></li>
+                <li><a href="messages.html"><i class="fas fa-comments"></i> Messages</a></li>
+                <li><a href="upgrade.html"><i class="fas fa-crown"></i> Upgrade</a></li>
+                <li><a href="successstory.html"><i class="fas fa-trophy"></i> Success Stories</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile-info">
+            <i class="fas fa-user-circle user-avatar-icon"></i>
+            <div class="user-text-details">
+                <span>Pratik Mane</span>
+                <small class="tooltip">A529912001</small>
+            </div>
+            <i class="fas fa-chevron-down profile-toggle-arrow"></i>
+            <!-- User Dropdown Menu -->
+            <div class="user-dropdown-menu">
+                
+                    <a href="terms.html"><i class="fas fa-file-contract"></i> Terms & Conditions</a>
+                    <a href="contact.html"><i class="fas fa-headset"></i> Contact Us</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+                    <a href="settings.html#password"><i class="fas fa-key"></i> Change Password</a>
+                    <a href="login.html" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- New Secondary Navigation Bar (Copied from matches.html) -->
+    <nav class="secondary-nav-bar">
+        <a href="html.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="edit_profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+        <a href="my_gallery.html"><i class="fas fa-images"></i> My Gallery</a>
+
+        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+    </nav>
+    <div>
+
+<div class="main_container">
+           
+    main content goes here
+</div>
+
+
+    JavaScript
+    <script src="layout.js"></script>
+
+
+</body>
+
+</html>
